@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+	--color-primary: #17273F;
+	--color-primary-light-1: #455265;
+	--color-primary-light-2: #303947;
+
+	--color-secondary: #57B7EC;
+	--color-grey-1: #D1D4D9;
+	--color-grey-2: #E8E9EC;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+	color: #fff;
+	font-weight: 500;
+    line-height: 1.6;
+	background: var(--color-primary);
+
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+@media only screen and (max-height: 46.25em) {
+	h3 {
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
 }
