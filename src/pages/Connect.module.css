@@ -44,7 +44,7 @@
     text-align: center;
 }
 
-.text-box {
+.text {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -54,7 +54,7 @@
     max-height: calc(50vh - 100px);
 }
 
-.text {
+.text p {
     font-size: 1.6rem;
     font-weight: 300;
 }
