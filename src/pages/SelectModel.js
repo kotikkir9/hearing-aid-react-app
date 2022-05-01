@@ -5,7 +5,7 @@ import HearingAidImage from '../assets/img/hearing-aid.png';
 
 export default function SelectModel() {
   return (
-    <div>
+    <>
       <header className={classes.header}>
         <h1>Select your model</h1>
         <ion-icon name="bluetooth-sharp" class={classes.icon}></ion-icon>
@@ -20,6 +20,6 @@ export default function SelectModel() {
         <Model src={HearingAidImage} title="Oticon More 7" />
         <Model src={HearingAidImage} title="Oticon More 8" />
       </div>
-    </div>   
+    </>   
   );
 }
