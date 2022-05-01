@@ -18,7 +18,7 @@
 
 .container {
     height: 60vh;
-    background-color: var();
+    background-color: var(--color-grey-1);
     border-top-left-radius: 1.5em;
     border-top-right-radius: 1.5em;
     overflow-y: auto;   
