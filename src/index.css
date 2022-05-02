@@ -5,8 +5,8 @@
 	--color-primary-light-1: #455265;
 	--color-primary-light-2: #303947;
 
-	--color-secondary: #57B7EC;
-	--color-grey-1: #D1D4D9;
+	--color-secondary: rgb(87, 183, 236);
+	--color-grey-1: rgb(209, 212, 217);
 	--color-grey-2: #E8E9EC;
 }
 
@@ -21,7 +21,6 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    font-size: 50%;
     overflow: hidden;
     height: -webkit-fill-available;
     height: -moz-available;
@@ -69,4 +68,10 @@ h3 {
 		font-size: 1.5rem;
 		font-weight: 400;
 	}
+}
+
+@media only screen and (max-height: 37.5em) {
+    html {
+        font-size: 50%;
+    }
 }

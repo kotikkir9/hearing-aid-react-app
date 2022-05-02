@@ -1,0 +1,54 @@
+.container {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: auto;
+}
+
+.text {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    position: relative;
+}
+
+.text p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1
+}
+
+.percent {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.case-icon {
+    width: 2rem;
+    height: 1.5rem;
+    border-radius: 4px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.case-icon::after {
+    content: "";
+    width: 4rem;
+    height: 2px;
+    background-color: var(--color-primary-light-1);
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,21 @@
+.container {
+    height: 100%;
+    background-color: var(--color-primary-light-1);
+    display: grid;
+    grid-template-rows: min-content min-content 1fr 1fr min-content;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+@media only screen and (max-height: 46.25em) {
+    .header {
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+}

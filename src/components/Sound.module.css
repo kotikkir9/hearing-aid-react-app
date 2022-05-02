@@ -1,0 +1,52 @@
+.input {
+    display: none;
+}
+
+.label {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 2rem;
+
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.label p {
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid rgba(209, 212, 217, 0.5);
+}
+
+.button {
+    height: 2.8rem;
+    width: 2.8rem;
+    border: 2.5px solid var(--color-grey-1);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.button::after {
+    content: "";
+    display: block;
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.input:checked ~ .label .button::after {
+    opacity: 1;
+}
+
+.input:checked ~ .label .button {
+    border-color: var(--color-secondary);
+}

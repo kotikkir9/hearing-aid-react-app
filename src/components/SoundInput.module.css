@@ -1,0 +1,82 @@
+.container {
+    margin: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sound-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.sound-input {
+    width: 100%;
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primary-light-2);
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+
+.sound-input::placeholder {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.icon-sound {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s;
+}
+
+.slider-container {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    background-color: rgba(87, 183, 236, 0.8);
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.1s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.icon-play {
+    width: 3rem;
+    height: 3rem;
+    opacity: 0.8;
+    transition: all 0.1s;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-height: 46.25em) {
+    .container {
+        gap: 1;
+    }
+}
