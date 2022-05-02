@@ -21,7 +21,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    font-size: 50%;
     overflow: hidden;
+    height: -webkit-fill-available;
+    height: -moz-available;
 }
 
 body {
@@ -34,11 +37,16 @@ body {
 
 	color: #fff;
 	font-weight: 500;
-    line-height: 1.6;
-	background: var(--color-primary);
-
-    height: 100vh;
+    line-height: 1.6;    
     width: 100vw;
+    height: 100vh;
+    height: -webkit-fill-available;
+    height: -moz-available;
+}
+
+#root {
+    background: var(--color-primary);
+    height: 100%;
 }
 
 h1 {
