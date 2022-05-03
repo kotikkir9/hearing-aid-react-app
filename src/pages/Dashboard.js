@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import BatteryIcon from '../components/BatteryIcon';
 import Equalizer from '../components/Equalizer';
 import MenuFooter from '../components/MenuFooter';
@@ -9,7 +9,6 @@ import LeftHearingAid from '../assets/img/aid-left.png'
 import RightHearingAid from '../assets/img/aid-right.png'
 
 export default function Dashboard() {
-    const modalRef = useRef();
     const [modalOpen, setModalOpen] = useState(false);
 
     const modalHandler = () => {
