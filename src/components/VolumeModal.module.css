@@ -1,0 +1,31 @@
+.modal {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    z-index: 999;
+    animation: close-modal 1s;
+}
+
+.open {
+    visibility: visible;
+}
+
+.closed {
+    visibility: hidden;
+    opacity: 0;
+    top: -100%;
+    transition: opacity 1s, visibility 1s, top 2s 1s;
+}
+
+.text {
+    color: #000;
+    text-align: center;
+    font-size: 4rem;
+}

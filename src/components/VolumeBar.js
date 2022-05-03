@@ -9,6 +9,13 @@ export default function VolumeBar(props) {
         const position = e.touches[0].pageY - rect.top;
 
         let volumePercent = parseInt(100 - (position / rect.height) * 100);
+
+        if(props.onActive) {
+            if(volumePercent >= 0 && volumePercent <= 100) {
+                props.onActive(volumePercent);
+            }
+        }
+
         if (volumePercent > 100) {
             volumePercent = 100;
         } else if(volumePercent < 0) {
@@ -16,7 +23,6 @@ export default function VolumeBar(props) {
         }
 
         volumeLevelRef.current.style.height = `${volumePercent}%`;
-        console.log(props.name ?? 'Volume', volumePercent + '%');
     }
 
     return (
