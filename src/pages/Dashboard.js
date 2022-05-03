@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import BatteryIcon from '../components/BatteryIcon';
 import Equalizer from '../components/Equalizer';
 import MenuFooter from '../components/MenuFooter';
@@ -9,8 +9,20 @@ import LeftHearingAid from '../assets/img/aid-left.png'
 import RightHearingAid from '../assets/img/aid-right.png'
 
 export default function Dashboard() {
+    const modalRef = useRef();
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const modalHandler = () => {
+        setModalOpen(!modalOpen);
+    }
+
     return (
         <div className={classes.container}>
+            <div className={`${classes.modal} ${modalOpen ? classes.open : classes.closed}`}>
+                <p>50%</p>
+            </div>
+            <button onClick={modalHandler}>asd</button>
+
             <header className={classes.header}>
                 <BatteryIcon iconName='battery-full' text='L' percent='99' />
                 <BatteryIcon iconName='battery-full' text='R' percent='99' />
