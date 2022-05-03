@@ -17,10 +17,10 @@ export default function Dashboard() {
 
     return (
         <div className={classes.container}>
-            <div className={`${classes.modal} ${modalOpen ? classes.open : classes.closed}`}>
+            {/* <div className={`${classes.modal} ${modalOpen ? classes.open : classes.closed}`}>
                 <p>50%</p>
             </div>
-            <button onClick={modalHandler}>asd</button>
+            <button onClick={modalHandler}>asd</button> */}
 
             <header className={classes.header}>
                 <BatteryIcon iconName='battery-full' text='L' percent='99' />
