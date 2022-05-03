@@ -5,17 +5,71 @@
     grid-template-rows: min-content min-content 1fr 1fr min-content;
 }
 
+/* ______________________ HEADER ______________________ */
+
 .header {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 3rem;
 }
 
+/* ______________________ VOLUME ______________________ */
+
+.volume-section {
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.volume {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.volume-bar {
+    grid-row: 1 / -1;
+}
+
+.volume-img {
+    grid-row: 1 / 2;
+    width: 90%;
+    height: auto;
+}
+
+.volume-img--left {
+    grid-column: 1 / 2;
+}
+
+.volume-img--right {
+    grid-column: 2 / 3;
+}
+
+.volume-text {
+    font-size: 6em;
+    font-weight: 600;
+    align-self: end;
+    line-height: 1;
+}
+
+/* ______________________ MEDIA ______________________ */
+
 @media only screen and (max-height: 46.25em) {
     .header {
-        padding-top: 2rem;
+        padding-top: 1.5rem;
         padding-bottom: 1.5rem;
+    }
+
+    .volume-img {
+        width: 70%;
+    }
+
+    .volume-text {
+        font-size: 4em;
     }
 }
