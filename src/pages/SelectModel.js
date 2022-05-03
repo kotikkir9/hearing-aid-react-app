@@ -20,6 +20,6 @@ export default function SelectModel() {
         <Model src={HearingAidImage} title="Oticon More 7" />
         <Model src={HearingAidImage} title="Oticon More 8" />
       </div>
-    </>   
+    </>
   );
 }
