@@ -22,6 +22,14 @@ export default function VolumeBar(props) {
             volumePercent = 0;
         }
 
+        if (volumePercent < 20) {
+            volumeLevelRef.current.style.backgroundColor = '#ffd43b';
+        } else if (volumePercent > 80) {
+            volumeLevelRef.current.style.backgroundColor = '#fa5252';
+        } else {
+            volumeLevelRef.current.style.backgroundColor = 'var(--color-secondary)';
+        }
+
         volumeLevelRef.current.style.height = `${volumePercent}%`;
     }
 
