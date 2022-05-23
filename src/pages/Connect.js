@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './Connect.module.css';
-import ConnectGuideImage from '../assets/img/connect-guide.png';
+import ConnectGuideImage from '../assets/img/pairing-image-placeholder.png';
 import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
 
@@ -20,7 +20,7 @@ export default function Connect() {
 			<header className={classes.header}>
 				<div className={classes['header-container']}>
 					<ion-icon name="arrow-back-outline" class={classes.icon} onClick={returnHandler}></ion-icon>
-					<h1>Oticon More 1</h1>
+					<h1>Hearing Aid 1</h1>
 				</div>
 				<img src={ConnectGuideImage} alt="Hearing aid connect guide" className={classes.image} />
 			</header>
